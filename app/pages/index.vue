@@ -5,7 +5,7 @@ const timeoutId = ref<ReturnType<typeof setTimeout> | null>(null);
 onMounted(() => {
   if (siteData.redirect) {
     timeoutId.value = setTimeout(() => {
-      window.location.href = siteData.redirectUrl;
+      location.replace(siteData.redirectUrl);
     }, siteData.redirectTime);
   }
 });
@@ -38,5 +38,8 @@ function handleContextMenu() {
     >
       Redirecionando...
     </h2>
+
+    <!-- Counter component integration -->
+    <Counter class="mt-6" />
   </div>
 </template>

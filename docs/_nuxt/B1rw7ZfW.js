@@ -1,1 +1,0 @@
-import{a as n,O as u,P as i,Q as o,n as r}from"./pBlfzcC-.js";const p=()=>n().$firebaseApp,c=t=>u(p().name),d=i(async t=>{let e,a;const s=([e,a]=o(()=>c()),e=await e,a(),e);if(!s&&t.path==="/loggedin")return r("/auth");if(s&&t.path==="/auth")return r("/loggedin")});export{d as default};
