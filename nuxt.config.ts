@@ -16,5 +16,17 @@ export default defineNuxtConfig({
     },
   },
   devtools: { enabled: true },
-  modules: ['@nuxt/icon', '@nuxt/fonts', '@nuxtjs/tailwindcss'],
+  modules: ['@nuxt/icon', '@nuxt/fonts', '@nuxtjs/tailwindcss', 'nuxt-vuefire'],
+  vuefire: {
+    auth: true,
+    config: {
+      apiKey: 'AIzaSyAqAMxJxgkETj4KSJmbctoCIhE6Kw927Ag',
+      authDomain: 'demoproject-10027.firebaseapp.com',
+      projectId: 'demoproject-10027',
+      appId: '1:660694173450:web:d6d0a3f545a0310bbe9cf3',
+    },
+  },
+  tailwindcss: {
+    exposeConfig: true,
+  },
 });
